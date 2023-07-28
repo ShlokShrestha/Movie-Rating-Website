@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+.home {
+  color: #ffff;
+}
+.posterimage {
+  height: 600px;
+}
+
+.posterimage > img {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.poster-overlay {
+  position: absolute;
+  padding: 5rem;
+  bottom: 0px;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.poster-overlay:hover {
+  opacity: 1;
+}
+
+.poster-overlay .title {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+.poster-runtime {
+  display: flex;
+  align-items: center;
+}
+.poster-runtime .rel {
+  font-size: 2rem;
+}
+
+.poster-runtime .rating {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.overview p {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  text-align: left;
+  width: 80%;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .swiper-pagination {
+    visibility: hidden;
+  }
+  .swiper-button-prev {
+    visibility: hidden;
+  }
+  .swiper-button-next {
+    visibility: hidden;
+  }
+  .posterimage {
+    height: 300px; /* Adjust the height as needed */
+  }
+
+  .poster-overlay {
+    padding: 1rem 2rem; /* Adjust the padding as needed */
+    height: 90%; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+
+  .poster-overlay .title {
+    font-size: 2rem; /* Adjust the font size as needed */
+  }
+
+  .poster-runtime .rel {
+    font-size: 1rem; /* Adjust the font size as needed */
+  }
+
+  .poster-runtime .rating {
+    font-size: 1rem; /* Adjust the font size as needed */
+  }
+
+  .overview p {
+    font-size: 0.75rem; /* Adjust the font size as needed */
+    width: 90%; /* Adjust the width as needed */
+    overflow: hidden;
+  }
+  .movieList {
+    bottom: 100px;
+  }
+}
+
+/* Responsive styles for screens below 481px */
+@media (max-width: 480px) {
+  .swiper-pagination {
+    visibility: hidden;
+  }
+  .swiper-button-prev {
+    visibility: hidden;
+  }
+  .swiper-button-next {
+    visibility: hidden;
+  }
+  .posterimage {
+    height: 200px;
+  }
+
+  .poster-overlay {
+    padding: 2rem;
+    height: 100%;
+  }
+
+  .poster-overlay .title {
+    font-size: 1.2rem;
+  }
+
+  .poster-runtime .rel {
+    font-size: 0.8rem;
+  }
+
+  .poster-runtime .rating {
+    font-size: 0.8rem;
+  }
+
+  .overview p {
+    font-size: 0.5rem;
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) and (min-width: 769px) {
+  .swiper-button-prev {
+    display: none;
+    visibility: hidden;
+  }
+  .swiper-button-next {
+    display: none;
+    visibility: hidden;
+  }
+  .posterimage {
+    height: 450px;
+  }
+
+  .poster-overlay {
+    padding: 3rem;
+    height: 80%;
+  }
+
+  .poster-overlay .title {
+    font-size: 3.2rem;
+  }
+
+  .poster-runtime .rel {
+    font-size: 1.8rem;
+  }
+
+  .poster-runtime .rating {
+    font-size: 1.8rem;
+  }
+
+  .overview p {
+    font-size: 1rem;
+    width: 90%;
+  }
+}
